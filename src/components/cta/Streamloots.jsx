@@ -52,7 +52,7 @@ export default function Streamloots() {
                     src="/images/logo-mareado.png"
                     width={500}
                     height={500}
-                    alt="streamloots logo"
+                    alt="streamloots card"
                     />
             </button>
           </div>
@@ -63,7 +63,7 @@ export default function Streamloots() {
               src="social/streamloots-icon.svg"
               width={150}
               height={150}
-              alt="streamloots logo"
+              alt="streamloots card"
               className={`${isColorChanged ? 'animate-spin' : ''}`}
             />
           </div>
