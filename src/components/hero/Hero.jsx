@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Fondo de la imagen */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: 'url("/images/halloween.png")' }}
+        style={{ backgroundImage: 'url("/images/halloween.jpg")' }}
       >
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black opacity-70"></div>
