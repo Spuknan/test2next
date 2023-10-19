@@ -6,6 +6,12 @@ import Discord from '@/components/cta/Discord';
 import Streamloots from '@/components/cta/Streamloots';
 import Contacto from '@/components/sections/Contacto';
 import LastVid from '@/components/sections/LastVid';
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'MikiThomas | cc',
+  description: 'Sumate a esta hermosa comunidad que formamos entre todos! Disfruta de los streams, los videos de youtube y todo el contenido!',
+}
 
 const page = () => {
   return (
