@@ -1,0 +1,9 @@
+.fulldvh {
+  height: calc(100dvh - 4rem);
+}
+
+@media (min-width: 768px) {
+  .fulldvh {
+    height: 70vh;
+  }
+}
