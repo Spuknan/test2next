@@ -39,7 +39,7 @@ export default function Streamloots() {
           <div className="cardFont flex mx-auto justify-center">
             <button onClick={handleCardFontClick} className="flex justify-center items-center transition duration-500 hover:scale-110 w-1/2 md:w-36">
                 <Image
-                src="/images/streamloots/colorear.png"
+                src="/images/COLOREAR.png"
                 width={500}
                 height={500}
                 alt="streamloots logo"
@@ -49,7 +49,7 @@ export default function Streamloots() {
           <div className="cardColor flex mx-auto justify-center">
             <button onClick={handleCardColorClick} className="flex justify-center items-center transition duration-500 hover:scale-110 w-1/2 md:w-36">
                 <Image
-                    src="/images/streamloots/logo-mareado.png"
+                    src="/images/logo-mareado.png"
                     width={500}
                     height={500}
                     alt="streamloots logo"
