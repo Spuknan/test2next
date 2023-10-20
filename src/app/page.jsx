@@ -4,7 +4,7 @@ import Divider from '@/components/utils/Divider';
 import LugarSeguro from '@/components/sections/LugarSeguro';
 import Discord from '@/components/cta/Discord';
 import Streamloots from '@/components/cta/Streamloots';
-import Contacto from '@/components/sections/Contacto';
+import Contacto from '@/components/sections/ContactForm';
 import LastVid from '@/components/sections/LastVid';
  
 export const metadata = {
@@ -21,8 +21,8 @@ const page = () => {
       <LastVid />
       <Discord />
       <Streamloots />
-      {/* <Divider />
-      <Contacto /> */}
+      <Divider />
+      <Contacto />
     </div>
   )
 }

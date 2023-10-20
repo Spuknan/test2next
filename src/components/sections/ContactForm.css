@@ -1,0 +1,17 @@
+#message {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+#message::-webkit-scrollbar {
+  width: 10px;
+}
+
+#message::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0);
+}
+
+#message::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  border-radius: 10px;
+}

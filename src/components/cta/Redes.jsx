@@ -20,7 +20,7 @@ const Redes = () => {
             <img src="/social/youtube-icon.svg" alt="Twitch" className="w-16"/>
           </a>
           <a href="https://www.streamloots.com/mikithomas/" target="_blank" className="flex justify-center align-center opacity-40 transition duration-300 hover:opacity-100 hover:scale-[1.1]">
-            <img src="/social/streamloots-icon.svg" alt="Streamloots" className="w-16"/>
+            <img src="/social/streamloots-icon.svg" alt="Streamloots" className="w-16 h-auto"/>
           </a>
         </div>
         <p className="text-zinc-500 text-center">No te pierdas de nada!</p>

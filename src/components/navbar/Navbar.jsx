@@ -48,7 +48,7 @@ const Navbar = () => {
               className="transition ease-in-out hover:text-gray-100"
               onClick={closeMenu}
             >
-              <Link href="/" className="text-gray-700 cursor-not-allowed">Contacto</Link>
+              <Link href="/contacto" className="text-gray-400">Contacto</Link>
             </li>
           </ul>
         </nav>
@@ -60,7 +60,7 @@ const Navbar = () => {
         </Link>
 
         {/* Hamburger Icon for Mobile */}
-        {/* <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
+        <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
           <svg
             className="w-6 h-6 text-white"
             fill="none"
@@ -75,13 +75,13 @@ const Navbar = () => {
               d="M4 6h16M4 12h16m-7 6h7"
             ></path>
           </svg>
-        </div> */}
+        </div>
 
         {/* Mobile Menu */}
-        {/* <nav
+        <nav
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } md:hidden absolute top-14 left-0 right-0 bg-zinc-900 bg-opacity-80 text-gray-400 z-20`}
+          } md:hidden absolute top-14 left-0 right-0 bg-zinc-900 text-gray-400 z-20`}
         >
           <ul className="flex flex-col items-center gap-3 p-4">
             <li
@@ -90,6 +90,8 @@ const Navbar = () => {
             >
               <Link href="/">Inicio</Link>
             </li>
+
+            {/*
             <li
               className="transition ease-in-out hover:text-gray-100 hover:bg-zinc-800 rounded-sm w-full text-center py-1 cursor-pointer"
               onClick={closeMenu}
@@ -102,20 +104,25 @@ const Navbar = () => {
             >
               <Link href="/eventos">Eventos</Link>
             </li>
+            */}
+
             <li
               className="transition ease-in-out hover:text-gray-100 hover:bg-zinc-800 rounded-sm w-full text-center py-1 cursor-pointer"
               onClick={closeMenu}
             >
               <Link href="/contacto">Contacto</Link>
             </li>
+
+            {/*
             <li
               className="transition ease-in-out hover:text-gray-100 hover:bg-zinc-800 rounded-sm w-full text-center py-1 cursor-pointer"
               onClick={closeMenu}
             >
               <Link href="/tienda">Tienda</Link>
             </li>
+            */}
           </ul>
-        </nav> */}
+        </nav>
       </div>
     </header>
   );

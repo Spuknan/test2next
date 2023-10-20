@@ -11,7 +11,7 @@ const Footer = () => {
               <Link href="/" className="text-zinc-400 transition duration-300 hover:text-white hover:underline">Inicio</Link>
               <Link href="/" className="text-zinc-700 cursor-not-allowed">Sobre mi</Link>
               <Link href="/" className="text-zinc-700 cursor-not-allowed">Eventos</Link>
-              <Link href="/" className="text-zinc-700 cursor-not-allowed">Contacto</Link>
+              <Link href="/contacto" className="text-zinc-400">Contacto</Link>
               <Link href="/" className="text-zinc-700 cursor-not-allowed">Tienda</Link>
               <Link href="/" className="text-zinc-700 cursor-not-allowed">Marcas</Link>
             </div>
@@ -33,7 +33,7 @@ const Footer = () => {
               <img src="/social/youtube-icon.svg" alt="Twitch" className="w-6" />
             </a>
             <a href="https://www.streamloots.com/mikithomas/" target="_blank" className="flex justify-center align-center opacity-40 transition duration-300 hover:opacity-100 hover:scale-[1.1]">
-              <img src="/social/streamloots-icon.svg" alt="Streamloots" className="w-6" />
+              <img src="/social/streamloots-icon.svg" alt="Streamloots" className="w-6 h-auto" />
             </a>
           </div>
         </div>
