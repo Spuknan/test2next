@@ -2,11 +2,15 @@
 
 import { useState } from "react";
 import '@/components/sections/ContactForm.css';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
+  const [captcha, setCaptcha] = useState("");
+
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -22,10 +26,17 @@ const ContactForm = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    console.log(captcha);
+
+    if (!captcha) {
+      console.log("captcha not verified!");
+      return
+    }
 
     if (!name || !message || !email) {
       return;
     }
+
 
     try {
       const res = await fetch('api/send', {
@@ -64,7 +75,7 @@ const ContactForm = () => {
         <label htmlFor="email" className="text-white flex flex-col">
           Email:
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
             value={email}
@@ -85,12 +96,15 @@ const ContactForm = () => {
             required
           ></textarea>
         </label>
-        <button
-          type="submit"
-          className="bg-pink-600 w-full sm:w-max px-5 py-1 rounded-md font-medium text-white self-end hover:bg-pink-700 hover:text-white transition duration-400 hover:scale-110"
-        >
-          Enviar
-        </button>
+        <div className="flex flex-col sm:flex-row sm:justify-between justify-center items-start gap-3">
+          <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} className="w-full flex justify-center sm:justify-start" theme="dark" onChange={setCaptcha} />
+          <button
+            type="submit"
+            className="bg-pink-600 w-full sm:w-max px-5 py-1 rounded-md font-medium text-white hover:bg-pink-700 hover:text-white transition duration-400 hover:scale-110"
+          >
+            Enviar
+          </button>
+        </div>
       </form>
     </div>
   );
