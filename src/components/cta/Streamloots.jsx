@@ -70,7 +70,7 @@ export default function Streamloots() {
           <h3 className={`font-bold glow text-xl ${isComicSans ? 'font-mono text-blue-200' : 'text-white'}`}>
             Todavía no usaste ninguna carta?
           </h3>
-          <p className={`${isComicSans ? 'font-mono text-pink-300' : 'text-zinc-400'}`}>
+          <p className={`${isComicSans ? 'text-pink-300' : 'text-zinc-400'}`}>
             Soy partner de Streamloots! Visitá su web y conocé todas las cartas
             que tengo disponibles para que te diviertas mientras yo la paso
             horriblemente mal.
