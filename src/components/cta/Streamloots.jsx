@@ -64,10 +64,10 @@ export default function Streamloots() {
               width={150}
               height={150}
               alt="streamloots card"
-              className={`${isColorChanged ? 'animate-spin' : ''}`}
+              className={`${isColorChanged ? 'animate-spin' : ''} ${isComicSans ? 'bg-pink-300 rounded-md' : ''}`}
             />
           </div>
-          <h3 className={`font-bold glow text-xl ${isComicSans ? 'font-mono text-blue-200' : 'text-white'}`}>
+          <h3 className={`font-bold glow text-xl ${isComicSans ? 'text-blue-300' : 'text-white'}`}>
             Todavía no usaste ninguna carta?
           </h3>
           <p className={`${isComicSans ? 'text-pink-300' : 'text-zinc-400'}`}>
