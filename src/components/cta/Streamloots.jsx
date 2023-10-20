@@ -59,6 +59,7 @@ export default function Streamloots() {
         </div>
         <div className="content flex flex-col align-center justify-center text-center md:justify-end gap-4 md:text-end">
           <div className="w-full flex justify-center md:justify-end">
+          <a href="https://www.streamloots.com/mikithomas" target="_blank">
             <Image
               src="social/streamloots-icon.svg"
               width={150}
@@ -66,6 +67,7 @@ export default function Streamloots() {
               alt="streamloots card"
               className={`${isColorChanged ? 'animate-spin' : ''} ${isComicSans ? 'bg-pink-300 rounded-md p-2' : ''}`}
             />
+          </a>
           </div>
           <h3 className={`font-bold glow text-xl ${isComicSans ? 'text-blue-300' : 'text-white'}`}>
             Todavía no usaste ninguna carta?
