@@ -1,4 +1,6 @@
 import './Hero.css';
+import Motion from '@/components/utils/Motion';
+
 
 const Hero = () => {
   return (
@@ -15,8 +17,8 @@ const Hero = () => {
       {/* Contenido centrado */}
       <div className="text-white text-center md:text-start z-10 container px-6 mx-auto">
         <div className="max-w-xl">
-          <h1 className="text-2xl md:text-4xl font-bold mb-4 glow">HALLOWEEN EN LA COMUNIDAD</h1>
-          <p className="text-md md:text-lg text-zinc-300">Todas las personas que se suscriban en mi canal de twitch durante el mes de Octubre van a estar en el fantasmita! Quedando en la repisa de los fantasmitas para siempre, inmortalizado como un no pleb. No te olvides de pasar por el canal para enterarte de más!</p>
+            <h1 className="text-2xl md:text-4xl font-bold mb-4 glow">HALLOWEEN EN LA COMUNIDAD</h1>
+            <p className="text-md md:text-lg text-zinc-300">Todas las personas que se suscriban en mi canal de twitch durante el mes de Octubre van a estar en el fantasmita! Quedando en la repisa de los fantasmitas para siempre, inmortalizado como un no pleb. No te olvides de pasar por el canal para enterarte de más!</p>
         </div>
       </div>
     </div>

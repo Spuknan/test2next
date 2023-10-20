@@ -34,7 +34,7 @@ export default function Streamloots() {
 
   return (
     <div className="bg-zinc-800">
-      <div className="flex flex-col md:flex-row container mx-auto px-6 py-12 gap-10">
+      <div className="flex flex-col md:flex-row container mx-auto px-6 py-20 gap-10">
         <div className="cards text-white flex gap-3 items-center justify-around">
           <div className="cardFont flex mx-auto justify-center">
             <button onClick={handleCardFontClick} className="flex justify-center items-center transition duration-500 hover:scale-110 w-1/2 md:w-36">
@@ -72,8 +72,11 @@ export default function Streamloots() {
           <h3 className={`font-bold glow text-xl ${isComicSans ? 'text-blue-300' : 'text-white'}`}>
             Todavía no usaste ninguna carta?
           </h3>
+          <h4 className={`${isComicSans ? 'text-pink-300' : 'text-zinc-400'}`}>
+            Proba con estas y enterate de cómo funcionan!
+          </h4>
           <p className={`${isComicSans ? 'text-pink-300' : 'text-zinc-400'}`}>
-            Soy partner de Streamloots! Visitá su web y conocé todas las cartas
+            Soy partner de Streamloots. Visitá su web y conocé todas las cartas
             que tengo disponibles para que te diviertas mientras yo la paso
             horriblemente mal.
           </p>

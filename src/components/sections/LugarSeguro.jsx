@@ -1,7 +1,7 @@
 const LugarSeguro = () => {
   return (
     <div className="bg-zinc-900">
-      <div className="container mx-auto px-6 py-8 flex gap-14">
+      <div className="container mx-auto px-6 py-24 flex gap-14">
         <div className="flex flex-col gap-6">
           <div className="title md:flex gap-2">
             <p className="text-white glow font-black text-4xl">TU</p>

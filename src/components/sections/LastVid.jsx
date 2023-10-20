@@ -30,7 +30,7 @@ const LastVid = () => {
   }, []);
 
   return (
-    <div className="flex flex-col container px-6 py-8 pb-20 md:pb-24 mx-auto gap-6 justify-center h-full">
+    <div className="flex flex-col container px-6 py-20 pb-20 md:pb-24 mx-auto gap-6 justify-center h-full">
       <h3 className="text-white font-bold text-2xl glow text-center">¿Ya viste mi último video?</h3>
       {loading ? (
         <LastVidSkeleton />
@@ -48,11 +48,6 @@ const LastVid = () => {
         </div>
       )}
     </div>
-
-
-
-
-
   );
 };
 
