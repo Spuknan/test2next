@@ -55,57 +55,59 @@ const ContactForm = () => {
 
   return (
     <div className="container px-6 py-16 pb-30 mx-auto max-w-4xl flex flex-col gap-6">
-      <div className="flex flex-col justify-center mx-auto text-center">
-        <h3 className="text-white glow font-bold text-2xl">CONTACTO</h3>
-        <p className="text-zinc-400 text-sm">Si querés dejarme un mensajito lindo o una propuesta, este es el lugar!</p>
-      </div>
-      <form onSubmit={handleFormSubmit} className="flex flex-col gap-3">
-        <label htmlFor="name" className="text-white flex flex-col">
-          Nombre:
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={name}
-            onChange={handleNameChange}
-            className="rounded-md p-2 bg-zinc-600"
-            required
-          />
-        </label>
-        <label htmlFor="email" className="text-white flex flex-col">
-          Email:
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={handleEmailChange}
-            className="rounded-md p-2 bg-zinc-600"
-            required
-          />
-        </label>
-        <label htmlFor="message" className="text-white  flex flex-col">
-          Mensaje:
-          <textarea
-            id="message"
-            name="message"
-            value={message}
-            onChange={handleMessageChange}
-            rows="4"
-            className="rounded-md p-2 bg-zinc-600"
-            required
-          ></textarea>
-        </label>
-        <div className="flex flex-col sm:flex-row sm:justify-between justify-center items-start gap-3">
-          <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} className="w-full flex justify-center sm:justify-start" theme="dark" onChange={setCaptcha} />
-          <button
-            type="submit"
-            className="bg-pink-600 w-full sm:w-max px-5 py-1 rounded-md font-medium text-white hover:bg-pink-700 hover:text-white transition duration-400 hover:scale-110"
-          >
-            Enviar
-          </button>
+      <div className="m-2 sm:m-6 rounded-md bg-zinc-900 p-6 shadow-lg">
+        <div className="flex flex-col justify-center mx-auto text-center">
+          <h3 className="text-white glow font-bold text-2xl">CONTACTO</h3>
+          <p className="text-zinc-400 text-sm">Si querés dejarme un mensajito lindo o una propuesta, este es el lugar!</p>
         </div>
-      </form>
+        <form onSubmit={handleFormSubmit} className="flex flex-col gap-3">
+          <label htmlFor="name" className="text-white flex flex-col">
+            Nombre:
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={name}
+              onChange={handleNameChange}
+              className="rounded-md p-2 bg-zinc-600"
+              required
+            />
+          </label>
+          <label htmlFor="email" className="text-white flex flex-col">
+            Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={handleEmailChange}
+              className="rounded-md p-2 bg-zinc-600"
+              required
+            />
+          </label>
+          <label htmlFor="message" className="text-white  flex flex-col">
+            Mensaje:
+            <textarea
+              id="message"
+              name="message"
+              value={message}
+              onChange={handleMessageChange}
+              rows="4"
+              className="rounded-md p-2 bg-zinc-600"
+              required
+            ></textarea>
+          </label>
+          <div className="flex flex-col sm:flex-row sm:justify-between justify-center items-start gap-3">
+            <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} className="w-full flex justify-center sm:justify-start" theme="dark" onChange={setCaptcha} />
+            <button
+              type="submit"
+              className="bg-pink-600 w-full sm:w-max px-5 py-1 rounded-md font-medium text-white hover:bg-pink-700 hover:text-white transition duration-400 hover:scale-110"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

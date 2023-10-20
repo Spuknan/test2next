@@ -1,9 +1,12 @@
 "use client"
 
 import { useState, useEffect } from 'react';
+import LastVidSkeleton from '@/components/skeletons/LastVidSkeleton';
+
 
 const LastVid = () => {
   const [lastVideoLink, setLastVideoLink] = useState('');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchLastVideo = async () => {
@@ -17,16 +20,21 @@ const LastVid = () => {
         }
       } catch (error) {
         console.error('Error fetching latest video', error);
+      } finally {
+        // Marcar como no cargando una vez que se completa la solicitud
+        setLoading(false);
       }
     };
-  
+
     fetchLastVideo();
   }, []);
 
   return (
     <div className="flex flex-col container px-6 py-8 pb-20 md:pb-24 mx-auto gap-6 justify-center h-full">
       <h3 className="text-white font-bold text-2xl glow text-center">¿Ya viste mi último video?</h3>
-      {lastVideoLink && (
+      {loading ? (
+        <LastVidSkeleton />
+      ) : (
         <div className="max-w-3xl mx-auto md:w-full">
           <div className="aspect-video">
             <iframe
