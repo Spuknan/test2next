@@ -36,7 +36,7 @@ const Navbar = () => {
               className="transition ease-in-out hover:text-gray-100"
               onClick={closeMenu}
             >
-              <Link href="/" className="text-gray-700 cursor-not-allowed">Sobre mi</Link>
+              <Link href="/sobre-mi">Sobre mi</Link>
             </li>
             <li
               className="transition ease-in-out hover:text-gray-100"
@@ -48,7 +48,7 @@ const Navbar = () => {
               className="transition ease-in-out hover:text-gray-100"
               onClick={closeMenu}
             >
-              <Link href="/contacto" className="text-gray-400">Contacto</Link>
+              <Link href="/contacto">Contacto</Link>
             </li>
           </ul>
         </nav>
@@ -89,15 +89,15 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               <Link href="/">Inicio</Link>
-            </li>
-
-            {/*
+            </li>            
             <li
               className="transition ease-in-out hover:text-gray-100 hover:bg-zinc-800 rounded-sm w-full text-center py-1 cursor-pointer"
               onClick={closeMenu}
             >
               <Link href="/sobre-mi">Sobre mi</Link>
             </li>
+
+            {/*
             <li
               className="transition ease-in-out hover:text-gray-100 hover:bg-zinc-800 rounded-sm w-full text-center py-1 cursor-pointer"
               onClick={closeMenu}

@@ -8,7 +8,7 @@ import Contacto from '@/components/sections/ContactForm';
 import LastVid from '@/components/sections/LastVid';
  
 export const metadata = {
-  title: 'MikiThomas | cc',
+  title: 'MikiThomas | Inicio',
   description: 'Sumate a esta hermosa comunidad que formamos entre todos! Disfruta de los streams, los videos de youtube y todo el contenido!',
 }
 
