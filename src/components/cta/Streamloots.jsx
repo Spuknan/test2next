@@ -75,7 +75,7 @@ export default function Streamloots() {
             que tengo disponibles para que te diviertas mientras yo la paso
             horriblemente mal.
           </p>
-          <p className={`text-xs ${isComicSans ? 'font-mono text-pink-300' : 'text-zinc-400'}`}>
+          <p className={`text-xs ${isComicSans ? 'text-pink-300' : 'text-zinc-400'}`}>
             Estate atento al stream, cada tanto sorteo cofres y regalo códigos de descuento!
           </p>
           <div className="w-full flex justify-center md:justify-end">
