@@ -6,8 +6,11 @@ export const metadata = {
 
 const SobreMi = () => {
   return (
-    <div className="bg-zinc-800 h-screen">
-      <div className="flex justify-center items-center text-white font-bold text-4xl glow">MUY PRONTO!</div>
+    <div className="bg-zinc-800 dvh">
+      <div className="dvh flex flex-col gap-6 justify-center items-center text-white font-bold text-4xl glow">
+      <img src="/gifs/emote_baile.gif" alt="emote baile" className="rounded-md" />
+      <h1>MUY PRONTO!</h1>
+      </div>
     </div>
   )
 }
