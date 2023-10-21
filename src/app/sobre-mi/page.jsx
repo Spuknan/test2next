@@ -6,7 +6,9 @@ export const metadata = {
 
 const SobreMi = () => {
   return (
-    <div className="bg-zinc-800 h-screen">SobreMi</div>
+    <div className="bg-zinc-800 h-screen">
+      <div className="flex justify-center items-center text-white font-bold text-4xl glow">MUY PRONTO!</div>
+    </div>
   )
 }
 
