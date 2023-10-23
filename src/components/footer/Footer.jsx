@@ -10,9 +10,9 @@ const Footer = () => {
             <div className="links text-zinc-400 flex flex-col">
               <Link href="/" className="text-zinc-400 transition duration-300 hover:text-white hover:underline">Inicio</Link>
               <Link href="/sobre-mi" className="text-zinc-400 transition duration-300 hover:text-white hover:underline">Sobre mi</Link>
-              <Link href="/" className="text-zinc-700 cursor-not-allowed">Eventos</Link>
+              {/* <Link href="/" className="text-zinc-700 cursor-not-allowed">Eventos</Link> */}
               <Link href="/contacto" className="text-zinc-400 transition duration-300 hover:text-white hover:underline">Contacto</Link>
-              <Link href="/" className="text-zinc-700 cursor-not-allowed">Tienda</Link>
+              {/* <Link href="/" className="text-zinc-700 cursor-not-allowed">Tienda</Link> */}
               <Link href="/" className="text-zinc-700 cursor-not-allowed">Marcas</Link>
             </div>
           </div>

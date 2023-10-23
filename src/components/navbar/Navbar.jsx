@@ -38,12 +38,12 @@ const Navbar = () => {
             >
               <Link href="/sobre-mi">Sobre mi</Link>
             </li>
-            <li
+            {/* <li
               className="transition ease-in-out hover:text-gray-100"
               onClick={closeMenu}
             >
               <Link href="/" className="text-gray-700 cursor-not-allowed">Eventos</Link>
-            </li>
+            </li> */}
             <li
               className="transition ease-in-out hover:text-gray-100"
               onClick={closeMenu}
