@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {}
+const withEnv = require("next-env");
 
-module.exports = {
-  nextConfig,
+const nextConfig = {
   env: {
-    RESEND_API_KEY: 're_B7w9cnhg_Dfu8v2zGiyVWtzjAVQPF3Dx1',
-    NEXT_PUBLIC_RECAPTCHA_SITE_KEY: '6Le4CbgoAAAAAOj3K3bHrGIw-XyDtvT8ibW3Bx6E',
-    RECAPTCHA_SECRET_KEY: '6Le4CbgoAAAAACS38E7U0tTKMhB9-Gt5nEP7e-Mb',
+    NEXT_PUBLIC_RESEND_API_KEY: process.env.NEXT_PUBLIC_RESEND_API_KEY,
+    NEXT_PUBLIC_RECAPTCHA_SITE_KEY: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+    NEXT_PUBLIC_RECAPTCHA_SECRET_KEY: process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY,
   },
-}
+};
+
+module.exports = withEnv({ nextConfig });
