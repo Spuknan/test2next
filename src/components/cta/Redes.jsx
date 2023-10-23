@@ -33,7 +33,7 @@ const Redes = () => {
           </Motion>
           <Motion animation="swipeUp" delay="0.5" >
             <a href="https://www.streamloots.com/mikithomas/" target="_blank" className="flex justify-center align-center opacity-40 transition duration-300 hover:opacity-100 hover:scale-[1.1]">
-              <img src="/social/streamloots-icon.svg" alt="Streamloots" className="w-16 h-auto" />
+              <img src="/social/streamloots-icon.svg" alt="Streamloots" className="w-16" />
             </a>
           </Motion>
         </div>
