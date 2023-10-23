@@ -4,6 +4,8 @@ import { useState } from "react";
 import '@/components/sections/ContactForm.css';
 import ReCAPTCHA from "react-google-recaptcha";
 
+const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -97,7 +99,7 @@ const ContactForm = () => {
             ></textarea>
           </label>
           <div className="flex flex-col sm:flex-row sm:justify-between justify-center items-start gap-3">
-            <ReCAPTCHA sitekey='6Le4CbgoAAAAAOj3K3bHrGIw-XyDtvT8ibW3Bx6E' className="w-full flex justify-center sm:justify-start" theme="dark" onChange={setCaptcha} />
+            <ReCAPTCHA sitekey={recaptchaSiteKey} className="w-full flex justify-center sm:justify-start" theme="dark" onChange={setCaptcha} />
             <button
               type="submit"
               className="bg-pink-600 w-full sm:w-max px-5 py-1 rounded-md font-medium text-white hover:bg-pink-700 hover:text-white transition duration-400 hover:scale-110"
