@@ -1,5 +1,5 @@
 import './Hero.css';
-import Motion from '@/components/utils/Motion';
+
 
 
 const Hero = () => {
